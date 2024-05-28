@@ -60,7 +60,7 @@ app.get("/room",async(req,res)=>{
 
 app.delete("/room/:roomId",async(req,res)=>{
   try{
-    const room = await Room.findOne({roomId: req.params.roomId);
+    const room = await Room.findOne({roomId: req.params.roomId});
     room.deleteOne();
     res.status(200).json("delete successfully");
   }catch (err){
