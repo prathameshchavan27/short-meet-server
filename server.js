@@ -66,7 +66,7 @@ app.delete("/room/:roomId",async(req,res)=>{
   }catch (err){
     res.status(400).json(err);
   }
-}
+})
 
 app.listen(3000,()=>{
     console.log('Server running on port 3000');
